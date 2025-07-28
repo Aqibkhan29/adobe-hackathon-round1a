@@ -62,8 +62,9 @@ def save_output(result, output_path):
         json.dump(result, f, indent=2)
 
 if __name__ == "__main__":
-    input_dir = "./app/input"
-    output_dir = "./app/output"
+    input_dir = "./input"
+    output_dir = "./output"
+
 
     for file in os.listdir(input_dir):
         if file.endswith(".pdf"):
